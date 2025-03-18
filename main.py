@@ -26,6 +26,7 @@ def reparti(a, b, n):
         li.append(a+i*(b-a)/n)
     return li
 
+
 fig = plt.figure()
 re = reparti(-5, 5, 14)
 plt.scatter(re, [0] * 15)
