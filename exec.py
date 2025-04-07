@@ -18,3 +18,4 @@ pol = moindres_carres(X, Y, o)
 plt.plot(L, pol(L), label=f"Moindres carrés d'ordre {o}")
 
 plt.legend()
+# %%

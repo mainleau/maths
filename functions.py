@@ -23,3 +23,4 @@ def lagrange(x, y):
         s += y[i] * p
 
     return s
+
