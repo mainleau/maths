@@ -24,3 +24,16 @@ def lagrange(x, y):
 
     return s
 
+def euler_explicite(f, y0, t0, t0T, h):
+    t = t0
+    y = y0
+    tn = [t0]
+    yn = [y0]
+
+    while t < t0T:
+        y += h * f(t, y)
+        t += h
+        tn.append(t)
+        yn.append(y)
+
+    return tn, yn
